@@ -1,27 +1,756 @@
-.card {
-    position: relative;
-    display: block;
-    width: 400px;
-}
+/* Seção de Itens Universais | Início  */
 
-.card img {
-    width: 100%;
-    display: block;
-}
 
-.legenda {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+/* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */
 
-    width: 100%;
-    padding: 15px;
 
+* {
     box-sizing: border-box;
+}
 
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
 
+/*-- Seção de customização do Header | Início */
+
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+header nav {
     text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+header nav a:hover {
+    color: #2e7d32;
+}
+
+/*-- Seção de customização do Header | Fim */
+
+/* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */
+
+
+/*-- Seção de customização do Body | Início */
+
+body {
+    background-color: #E0E0E0;
+    margin: 0;
+}
+
+/*-- Seção de customização do Body | Fim */
+
+
+/* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */
+
+
+/*-- Seção de customização do Footer | Início */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    margin-top: 30px;
+}
+
+footer p {
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+footer address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+footer nav {
+    margin-top: 15px;
+}
+
+footer nav a {
+    margin: 0 8px;
+}
+
+footer p:last-child {
+    margin-top: 30px;
+    font-size: 14px;
+    color: white;
+}
+
+/*  Seção de customização do Footer | Fim */
+
+
+/* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */ /* DIVISÓRIA */
+
+
+/* Seção de Itens Universais | Fim */
+
+
+/* ================================
+   MAIN - PÁGINA INICIAL
+================================ */
+
+.main-page-index {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   TÍTULO E INTRODUÇÃO
+================================ */
+
+.main-page-index > h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.main-page-index > p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   SEÇÕES
+================================ */
+
+.section-page-index {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-page-index h2 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.section-page-index h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.card {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    color: #222;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* ================================
+   IMAGENS
+================================ */
+
+.figure-page-index {
+    margin: 0;
+}
+
+.figure-page-index img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================================
+   TEXTO DOS CARDS
+================================ */
+
+.figcaption-page-index {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   EFEITO AO PASSAR O MOUSE
+================================ */
+
+.card:hover {
+    background-color: #e8f5e9;
+}
+
+.card:hover .figcaption-page-index {
+    color: #2e7d32;
+}
+
+
+/* ========================================
+   PÁGINA DE VOLUNTÁRIOS
+======================================== */
+
+.main-page-voluntarios {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* ========================================
+   SEÇÕES
+======================================== */
+
+.section-page-voluntarios {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-page-voluntarios h1 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.section-page-voluntarios h2 {
+    color: #388e3c;
+    margin-bottom: 15px;
+}
+
+.section-page-voluntarios h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+.section-page-voluntarios p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CARDS DOS VOLUNTÁRIOS
+======================================== */
+
+.article-page-voluntarios {
+    background-color: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* ========================================
+   IMAGENS DOS VOLUNTÁRIOS
+======================================== */
+
+.article-page-voluntarios img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* ========================================
+   INFORMAÇÕES DOS VOLUNTÁRIOS
+======================================== */
+
+.strong-article-page-voluntarios {
+    color: #2e7d32;
+}
+
+
+/* ========================================
+   BOTÃO "QUERO SER VOLUNTÁRIO"
+======================================== */
+
+.section-page-voluntarios a {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.section-page-voluntarios a:hover {
+    background-color: #1b5e20;
+}
+
+
+/* ================================
+   PÁGINA SOBRE NÓS
+================================ */
+
+.main-page-sobre_nos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   SEÇÕES
+================================ */
+
+.section-page-sobre_nos {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Título principal */
+
+.section-page-sobre_nos h1 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+
+/* Títulos das seções */
+
+.section-page-sobre_nos h2 {
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+
+/* Subtítulos */
+
+.section-page-sobre_nos h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   PARÁGRAFOS
+================================ */
+
+.section-page-sobre_nos p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   ARTIGOS
+================================ */
+
+.article-page-sobre_nos {
+    background-color: white;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   LISTAS
+================================ */
+
+.lista-section-page-sobre_nos {
+    max-width: 700px;
+    margin: 20px auto;
+    padding-left: 30px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   BOTÕES / LINKS
+================================ */
+
+.section-page-sobre_nos a {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+/* Quando passar o mouse */
+
+.section-page-sobre_nos a:hover {
+    background-color: #1b5e20;
+}
+
+
+/* ================================
+   PÁGINA DE PROJETOS
+================================ */
+
+.main-page-projetos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   TÍTULO PRINCIPAL
+================================ */
+
+.h1-main-page-projetos {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 40px;
+}
+
+
+/* ================================
+   ARTIGOS
+================================ */
+
+.article-page-projetos {
+    background-color: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* ================================
+   TÍTULO DOS ARTIGOS
+================================ */
+
+.h2-article-page-projetos {
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   FIGURA
+================================ */
+
+.figure-page-projetos {
+    margin: 0;
+}
+
+
+/* ================================
+   IMAGEM
+================================ */
+
+.figure-page-projetos img {
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ================================
+   LEGENDA
+================================ */
+
+.figcaption-page-projetos {
+    margin-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* ================================
+   PARÁGRAFO
+================================ */
+
+.p-article-page-projetos {
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   BOTÃO
+================================ */
+
+.botao-cadastro-section-page-projetos {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+/* ================================
+   BOTÃO AO PASSAR O MOUSE
+================================ */
+
+.botao-cadastro-section-page-projetos:hover {
+    background-color: #1b5e20;
+}
+
+
+/* ================================
+   PÁGINA DE DOAÇÃO
+================================ */
+
+.main-page-doe {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   SEÇÕES
+================================ */
+
+.section-page-doe {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/* ================================
+   TÍTULOS
+================================ */
+
+.h1-section-page-doe {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.h2-section-page-doe {
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   PARÁGRAFOS
+================================ */
+
+.p-section-page-doe {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   BOTÃO DE DOAÇÃO
+================================ */
+
+.botao-cadastro-section-page-doe {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+/* ================================
+   BOTÃO AO PASSAR O MOUSE
+================================ */
+
+.botao-cadastro-section-page-doe:hover {
+    background-color: #1b5e20;
+}
+
+
+/* ================================
+   PÁGINA DE CADASTRO
+================================ */
+
+.main-page-cadastro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   TÍTULO E INTRODUÇÃO
+================================ */
+
+.main-page-cadastro h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.main-page-cadastro > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   FORMULÁRIO
+================================ */
+
+.main-page-cadastro form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   FIELDSETS
+================================ */
+
+.main-page-cadastro fieldset {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+
+/* Títulos dos fieldsets */
+
+.main-page-cadastro legend {
+    color: #2e7d32;
+    font-size: 20px;
     font-weight: bold;
+    padding: 0 10px;
+}
+
+
+/* ================================
+   LABELS
+================================ */
+
+.main-page-cadastro label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+/* ================================
+   CAMPOS DE TEXTO
+================================ */
+
+.main-page-cadastro input[type="text"],
+.main-page-cadastro input[type="email"],
+.main-page-cadastro input[type="date"],
+.main-page-cadastro input[type="tel"],
+.main-page-cadastro input[type="password"],
+.main-page-cadastro input[type="file"],
+.main-page-cadastro select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+/* ================================
+   CAMPOS AO CLICAR
+================================ */
+
+.main-page-cadastro input:focus,
+.main-page-cadastro select:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+
+/* ================================
+   CHECKBOXES
+================================ */
+
+.main-page-cadastro input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+
+/* Labels dos checkboxes */
+
+.main-page-cadastro fieldset fieldset label {
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+
+/* ================================
+   TEXTOS DE AJUDA
+================================ */
+
+#ajuda-foto,
+#mensagem-cep {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   BOTÃO
+================================ */
+
+.main-page-cadastro button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* ================================
+   BOTÃO AO PASSAR O MOUSE
+================================ */
+
+.main-page-cadastro button:hover {
+    background-color: #1b5e20;
 }
