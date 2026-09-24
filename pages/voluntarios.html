@@ -178,6 +178,101 @@
         </section>
         <!-- Chamada para ação | Fim -->
 
+        
+<button type="button" class="btn" onclick="mostrarToast()">
+    Confirmar ação
+</button>
+
+<div
+    id="toast"
+    class="toast toast-escondido"
+    role="status"
+    aria-live="polite"
+>
+    <span>Ação realizada com sucesso!</span>
+
+    <button
+        type="button"
+        onclick="fecharToast()"
+        aria-label="Fechar notificação"
+    >
+        &times;
+    </button>
+</div>
+
+<script>
+function mostrarToast() {
+    const toast = document.getElementById("toast");
+
+    toast.classList.remove("toast-escondido");
+
+    setTimeout(() => {
+        fecharToast();
+    }, 4000);
+}
+
+function fecharToast() {
+    const toast = document.getElementById("toast");
+
+    toast.classList.add("toast-escondido");
+}
+</script>
+
+<button type="button" class="btn" onclick="abrirModal()">
+    Saiba mais
+</button>
+
+<div
+    id="modal"
+    class="modal modal-escondido"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="titulo-modal"
+>
+    <div class="modal-conteudo">
+
+        <div class="modal-fechar">
+            <button
+                type="button"
+                onclick="fecharModal()"
+                aria-label="Fechar janela"
+            >
+                &times;
+            </button>
+        </div>
+
+        <h2 id="titulo-modal">Sobre o projeto</h2>
+
+        <p>
+            O Alimenta+ busca contribuir para ações sociais,
+            incentivando a participação da comunidade e o apoio
+            às iniciativas da organização.
+        </p>
+
+        <button type="button" class="btn" onclick="fecharModal()">
+            Fechar
+        </button>
+
+    </div>
+</div>
+
+<script>
+function abrirModal() {
+    const modal = document.getElementById("modal");
+
+    modal.classList.remove("modal-escondido");
+}
+
+function fecharModal() {
+    const modal = document.getElementById("modal");
+
+    modal.classList.add("modal-escondido");
+}
+</script>
+
+
+
+
     </main class="main-page-voluntarios">
 
    <!-- Footer | Início -->
